@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className=" fixed top-0 left-0 right-0  w-full text-dark-primary dark:text-light-primary font-header font-semibold text-lg shadow-md transition-colors duration-200 bg-light-secondary dark:bg-dark-secondary  ">
+    <header className="bg-light-primary dark:bg-gradient-to-r from-dark-accent to-dark-primary  animate-background fixed top-0 left-0 right-0  w-full text-dark-primary dark:text-light-primary font-header font-semibold text-lg shadow-md dark:shadow-neon transition-colors duration-500  z-50  ">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <Link
           href="#main"

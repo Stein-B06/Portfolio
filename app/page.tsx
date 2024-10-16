@@ -1,35 +1,24 @@
 "use client"; // Bruker client-side rendering
 
 import React from "react";
+import About from "./components/About";
+import Main from "./components/Main";
 
 export default function Page() {
   return (
-    <div className="bg-light-primary dark:bg-dark-primary min-h-screen text-light-textPrimary dark:text-dark-textPrimary  transition-colors duration-1000 ">
+    <div className="font-body bg-light-primary dark:bg-dark-primary min-h-screen text-light-textPrimary dark:text-dark-textPrimary  transition-colors duration-500 ease-in-out ">
       {/* Main Section */}
-      <section
-        id="main"
-        className="h-screen flex flex-col items-center justify-center "
-      >
-        <h1 className="text-5xl font-bold">Lorem, ipsum dolor.</h1>
-        <p className="mt-4 text-lg pb-10">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          sapiente, tempora cupiditate odit molestiae neque?
-        </p>
+      <section id="main" className=" mx-4 ">
+        <Main />
       </section>
 
       {/* About Section */}
-      <section
-        id="about"
-        className="h-screen flex items-center justify-center "
-      >
-        <h1 className="text-4xl font-header">About Section</h1>
+      <section id="about" className=" flex justify-center ">
+        <About />
       </section>
 
       {/* Projects Section */}
-      <section
-        id="projects"
-        className="h-screen flex items-center justify-center"
-      >
+      <section id="projects" className=" flex  justify-center">
         <h1 className="text-4xl">Projects Section</h1>
       </section>
 

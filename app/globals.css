@@ -6,11 +6,20 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.h1 {
+  @apply text-[48px] xl:text-[80px] leading-10 font-semibold;
+}
+.h2 {
+  @apply text-[36px] xl:text-[48px] leading-9 font-semibold;
+}
+.h3 {
+  @apply text-[20px] xl:text-[24px] leading-8 font-semibold;
 }
 
 .hamburger {
@@ -49,4 +58,107 @@ html {
 
 .hamburger.open .hamburger-line:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -8.5px);
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-background {
+  background-size: 200% 200%;
+  animation: gradient-move 15s ease infinite;
+}
+
+.neon-button {
+  background-color: #7619ac;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #a04ecf, 0 0 20px #a152cf;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 25px #a879c4, 0 0 30px #a879c4;
+  background-color: #9b50c7;
+  transition: all ease-in-out;
+  transition-duration: 0.5s;
+}
+
+/* animasjon bakgrunn hovedseksjon darkmode */
+@keyframes dark-gradient {
+  0% {
+    border-color: #099d69;
+    box-shadow: 0 0 15px #099d69, 0 0 30px #099d69, 0 0 60px #099d69,
+      0 0 50px #099d69;
+  }
+  25% {
+    border-color: #7619ac;
+    box-shadow: 0 0 15px #7619ac, 0 0 30px #7619ac, 0 0 60px #7619ac,
+      0 0 100px #7619ac;
+  }
+  50% {
+    border-color: #099d69;
+    box-shadow: 0 0 15px #099d69, 0 0 30px #099d69, 0 0 60px #099d69,
+      0 0 50px #099d69;
+  }
+  75% {
+    border-color: #7619ac;
+    box-shadow: 0 0 15px #7619ac, 0 0 30px #7619ac, 0 0 60px #7619ac,
+      0 0 100px #7619ac;
+  }
+  100% {
+    border-color: #099d69;
+    box-shadow: 0 0 15px #099d69, 0 0 30px #099d69, 0 0 60px #099d69,
+      0 0 50px #099d69;
+  }
+}
+
+/* animasjon bakgrunn hovedseksjon lightmode */
+@keyframes light-gradient {
+  0% {
+    border-color: #365314;
+    box-shadow: 0 0 15px #365314, 0 0 30px #365314, 0 0 45px #365314,
+      0 0 30px #365314;
+  }
+  25% {
+    border-color: #6e6b19;
+    box-shadow: 0 0 15px #6e6b19, 0 0 30px #6e6b19, 0 0 45px #6e6b19,
+      0 0 30px #6e6b19;
+  }
+  50% {
+    border-color: #365314;
+    box-shadow: 0 0 15px #365314, 0 0 30px #365314, 0 0 45px #365314,
+      0 0 30px #365314;
+  }
+  75% {
+    border-color: #6e6b19;
+    box-shadow: 0 0 15px #6e6b19, 0 0 30px #6e6b19, 0 0 45px #6e6b19,
+      0 0 30px #6e6b19;
+  }
+  100% {
+    border-color: #365314;
+    box-shadow: 0 0 15px #365314, 0 0 30px #365314, 0 0 45px #365314,
+      0 0 30px #365314;
+  }
+}
+
+.light-gradient {
+  animation: light-gradient 8s linear infinite; /* Animerer borderen */
+  border-width: 2px; /* Setter tykkelsen på borderen */
+  border-style: hidden;
+}
+
+.dark-gradient {
+  animation: dark-gradient 8s linear infinite; /* Animerer borderen */
+  border-width: 2px; /* Setter tykkelsen på borderen */
+  border-style: hidden;
 }
