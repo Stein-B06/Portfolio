@@ -12,31 +12,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        neon: {
-          green: "#39FF14", // Neon grønn
-          "green-light": "#57FF45", // Lysere neon grønn
-          pink: "#FF1493", // Neon rosa
-          "pink-light": "#FF69B4", // Lysere neon rosa
-          blue: "#00E6E6", // Neon blå
-          "blue-light": "#33FFFF", // Lysere neon blå
-          purple: "#9D00FF", // Neon lilla
-          "purple-light": "#B266FF", // Lysere neon lilla
-        },
-        // Definer farger for light-mode
+        // Bakgrunns og tekstfarger for light-mode
         light: {
-          primary: "#E9EDC9", // Light mode primary color
-          secondary: "#CCD5AE", // Light mode secondary color
-          tertiary: "#D4A373", // Light mode tertiary color
-          textPrimary: "#111827", // Light mode text color
-          textSecondary: "#6B7280", // Light mode secondary text color
+          primary: "#E9EDC9",
+          secondary: "#CCD5AE",
+          accent: "#365314",
+          textPrimary: "#010C04",
+          textSecondary: "#022E0D",
         },
-        // Definer farger for dark-mode
+        // Bakgrunns og tekstfarger for dark-mode
         dark: {
-          primary: "#1F2937", // Dark mode primary color
-          secondary: "#374151", // Dark mode secondary color
-          tertiary: "#4B5563", // Dark mode tertiary color
-          textPrimary: "#F9FAFB", // Dark mode text color
-          textSecondary: "#9CA3AF", // Dark mode secondary text color
+          primary: "#08020C",
+          secondary: "#3A015C",
+          accent: "#365314",
+          ekstra: "#099D69",
+          textPrimary: "#F7F7F7",
+          textSecondary: "#DEEEE0",
         },
       },
       fontFamily: {
@@ -45,7 +36,7 @@ const config: Config = {
         code: ["Fira Code", "monospace"], // Kode eller aksenter
       },
       boxShadow: {
-        neon: "0 0 10px #0ff, 0 0 10px #0ff, 0 0 3px #0ff",
+        neon: "0 0 10px #099D69, 0 0 10px #099D69, 0 0 3px #099D69",
       },
     },
   },
