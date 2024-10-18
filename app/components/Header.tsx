@@ -11,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-light-primary dark:bg-gradient-to-r from-dark-accent to-dark-primary  animate-background fixed top-0 left-0 right-0  w-full text-dark-primary dark:text-light-primary font-header font-semibold text-lg shadow-md dark:shadow-neon transition-colors duration-500  z-50  ">
+    <header className="bg-light-primary dark:bg-gradient-to-r from-dark-accent to-dark-primary  animate-background fixed top-0 left-0 right-0  w-full text-light-textPrimary dark:text-dark-textPrimary font-header font-semibold shadow-md dark:shadow-neon z-50  ">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <Link
           href="#main"
@@ -20,17 +20,17 @@ export default function Header() {
           Lorem
         </Link>
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="#main" className="hover:underline">
-            Home
+          <Link href="#main" className="relative underline-transition">
+            HJEM
           </Link>
-          <Link href="#about" className="hover:underline">
-            About
+          <Link href="#about" className="relative underline-transition">
+            OM MEG
           </Link>
-          <Link href="#projects" className="hover:underline">
-            Projects
+          <Link href="#projects" className="relative underline-transition">
+            PROSJEKTER
           </Link>
-          <Link href="#contact" className="hover:underline">
-            Contact
+          <Link href="#contact" className="relative underline-transition">
+            KONTAKT
           </Link>
           <div>
             <ThemeSwitcher />
@@ -57,31 +57,31 @@ export default function Header() {
       >
         <Link
           href="#main"
-          className="hover:underline pb-2"
+          className="relative underline-transition mb-4"
           onClick={handleMenuToggle}
         >
-          Home
+          HJEM
         </Link>
         <Link
           href="#about"
-          className="hover:underline pb-2"
+          className="relative underline-transition mb-4 "
           onClick={handleMenuToggle}
         >
-          About
+          OM MEG
         </Link>
         <Link
           href="#projects"
-          className="hover:underline pb-2"
+          className="relative underline-transition mb-4"
           onClick={handleMenuToggle}
         >
-          Projects
+          PROSJEKTER
         </Link>
         <Link
           href="#contact"
-          className="hover:underline pb-6"
+          className="relative underline-transition mb-8"
           onClick={handleMenuToggle}
         >
-          Contact
+          KONTAKT
         </Link>
         <ThemeSwitcher />
       </div>

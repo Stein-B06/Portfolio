@@ -60,6 +60,24 @@ html {
   transform: rotate(-45deg) translate(5px, -8.5px);
 }
 
+.underline-transition::after {
+  content: "";
+  background-color: #010c04;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 1.5px;
+  transition: width 0.2s ease-in-out;
+}
+.underline-transition:hover::after {
+  width: 100%;
+}
+
+.dark .underline-transition::after {
+  background-color: #f7f7f7; /* Color for dark mode */
+}
+
 @keyframes gradient-move {
   0% {
     background-position: 0% 50%;
@@ -152,13 +170,13 @@ html {
 }
 
 .light-gradient {
-  animation: light-gradient 8s linear infinite; /* Animerer borderen */
-  border-width: 2px; /* Setter tykkelsen på borderen */
+  animation: light-gradient 8s linear infinite;
+  border-width: 2px;
   border-style: hidden;
 }
 
 .dark-gradient {
-  animation: dark-gradient 8s linear infinite; /* Animerer borderen */
-  border-width: 2px; /* Setter tykkelsen på borderen */
+  animation: dark-gradient 8s linear infinite;
+  border-width: 2px;
   border-style: hidden;
 }

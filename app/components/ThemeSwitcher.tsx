@@ -12,7 +12,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className=" bg-dark-secondary dark:bg-light-primary p-1 w-9 rounded-full  dark:shadow-neon "
+      className=" bg-dark-secondary dark:bg-light-primary p-1 w-8 rounded-full  dark:shadow-neon "
     >
       {theme === "dark" ? <span>🌞</span> : <span>🌙</span>}
     </button>
