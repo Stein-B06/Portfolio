@@ -60,7 +60,7 @@ html {
   transform: rotate(-45deg) translate(5px, -8.5px);
 }
 
-.underline-transition::after {
+/*.underline-transition::after {
   content: "";
   background-color: #010c04;
   position: absolute;
@@ -75,8 +75,10 @@ html {
 }
 
 .dark .underline-transition::after {
-  background-color: #f7f7f7; /* Color for dark mode */
+  background-color: #f7f7f7; /* Color for dark mode 
 }
+
+*/
 
 @keyframes gradient-move {
   0% {
@@ -111,7 +113,7 @@ html {
   transition-duration: 0.5s;
 }
 
-/* animasjon bakgrunn hovedseksjon darkmode */
+/* animasjon bakgrunn Image hovedseksjon darkmode */
 @keyframes dark-gradient {
   0% {
     border-color: #099d69;
@@ -140,7 +142,7 @@ html {
   }
 }
 
-/* animasjon bakgrunn hovedseksjon lightmode */
+/* animasjon bakgrunn Image hovedseksjon lightmode */
 @keyframes light-gradient {
   0% {
     border-color: #365314;

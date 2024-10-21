@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="font-body py-20 min-h-screen flex flex-col justify-center transition-all duration-500"
+      className="font-body h-screen flex flex-col justify-center transition-all duration-500"
     >
       {/* Innhold */}
       <div className="relative z-10 max-w-6xl mx-auto text-center px-6 lg:px-12">
