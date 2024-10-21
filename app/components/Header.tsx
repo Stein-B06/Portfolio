@@ -1,17 +1,44 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const options = {
+      threshold: 0.4, // aktiverer observer når 40% av seksjonene er synlig.
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Fjern observer når komponenten unmountes
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
-    <header className="bg-light-primary dark:bg-gradient-to-r from-dark-accent to-dark-primary  animate-background fixed top-0 left-0 right-0  w-full text-light-textPrimary dark:text-dark-textPrimary font-header font-semibold shadow-md dark:shadow-neon z-50  ">
+    <header className="bg-light-primary dark:bg-gradient-to-r from-dark-accent to-dark-primary  animate-background fixed top-0 left-0 right-0  w-full text-light-textPrimary dark:text-dark-textPrimary font-header font-semibold shadow-md dark:shadow-neon z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <Link
           href="#main"
@@ -19,18 +46,42 @@ export default function Header() {
         >
           Lorem
         </Link>
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link href="#main" className="relative underline-transition">
-            HJEM
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link href="#main" className="hover:text-dark-ekstra">
+            <span
+              className={`  ${
+                activeSection === "main" ? "text-dark-ekstra  " : ""
+              } `}
+            >
+              HJEM
+            </span>
           </Link>
-          <Link href="#about" className="relative underline-transition">
-            OM MEG
+          <Link href="#about" className="hover:text-dark-ekstra">
+            <span
+              className={`  ${
+                activeSection === "about" ? "text-dark-ekstra" : ""
+              } `}
+            >
+              OM MEG
+            </span>
           </Link>
-          <Link href="#projects" className="relative underline-transition">
-            PROSJEKTER
+          <Link href="#projects" className="hover:text-dark-ekstra">
+            <span
+              className={`  ${
+                activeSection === "projects" ? "text-dark-ekstra  " : ""
+              } `}
+            >
+              PROSJEKTER
+            </span>
           </Link>
-          <Link href="#contact" className="relative underline-transition">
-            KONTAKT
+          <Link href="#contact" className="hover:text-dark-ekstra">
+            <span
+              className={`  ${
+                activeSection === "contact" ? "text-dark-ekstra " : ""
+              } `}
+            >
+              KONTAKT
+            </span>
           </Link>
           <div>
             <ThemeSwitcher />
@@ -57,31 +108,55 @@ export default function Header() {
       >
         <Link
           href="#main"
-          className="relative underline-transition mb-4"
+          className="hover:text-dark-ekstra mb-4"
           onClick={handleMenuToggle}
         >
-          HJEM
+          <span
+            className={`  ${
+              activeSection === "main" ? "text-dark-ekstra  " : ""
+            } `}
+          >
+            HJEM
+          </span>
         </Link>
         <Link
           href="#about"
-          className="relative underline-transition mb-4 "
+          className="hover:text-dark-ekstra mb-4 "
           onClick={handleMenuToggle}
         >
-          OM MEG
+          <span
+            className={`  ${
+              activeSection === "about" ? "text-dark-ekstra  " : ""
+            } `}
+          >
+            OM MEG
+          </span>
         </Link>
         <Link
           href="#projects"
-          className="relative underline-transition mb-4"
+          className="hover:text-dark-ekstra mb-4"
           onClick={handleMenuToggle}
         >
-          PROSJEKTER
+          <span
+            className={`  ${
+              activeSection === "projects" ? "text-dark-ekstra  " : ""
+            } `}
+          >
+            PROSJEKTER
+          </span>
         </Link>
         <Link
           href="#contact"
-          className="relative underline-transition mb-8"
+          className="hover:text-dark-ekstra mb-8"
           onClick={handleMenuToggle}
         >
-          KONTAKT
+          <span
+            className={`  ${
+              activeSection === "contact" ? "text-dark-ekstra  " : ""
+            } `}
+          >
+            KONTAKT
+          </span>
         </Link>
         <ThemeSwitcher />
       </div>
