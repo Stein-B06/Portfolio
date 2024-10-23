@@ -2,6 +2,7 @@
 import React from "react";
 import About from "./components/About";
 import Main from "./components/Main";
+import MouseArrowGlow from "./components/mouseArrowGlow";
 
 export default function Page() {
   return (
@@ -31,6 +32,7 @@ export default function Page() {
       >
         <h1 className="text-4xl font-header">KONTAKT SEKSJON</h1>
       </section>
+      <MouseArrowGlow />
     </div>
   );
 }
