@@ -32,7 +32,7 @@ const config: Config = {
       },
       fontFamily: {
         body: ["Poppins", "sans-serif"], // For brødtekst
-        header: ["Playfair Display", "serif"], // For overskrifter
+        header: ["oswald", "sans-serif"], // For overskrifter
         code: ["Fira Code", "monospace"], // Kode eller aksenter
       },
       boxShadow: {
