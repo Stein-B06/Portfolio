@@ -58,7 +58,7 @@ const icons: IconItem[] = [
 
 // Classname for li elementet.
 const divLiClassName =
-  "flex items-center shadow-neon space-x-3 pr-5 bg-light-accent font-semibold text-dark-textPrimary dark:bg-dark-secondary dark:text-dark-textSecondary  p-2 rounded-md";
+  "flex items-center w-full shadow-neon space-x-3 pr-5 bg-light-accent font-semibold text-base md:text-lg lg:text-xl text-dark-textPrimary dark:bg-dark-secondary dark:text-dark-textSecondary  p-2 rounded-md";
 
 // li animasjon
 const liVariants = {
@@ -88,7 +88,7 @@ const About: React.FC = () => {
           OM MEG
         </h2>
         <div>
-          <p className="text-lg lg:text-xl text-left leading-relaxed mb-6 ">
+          <p className="text-lg lg:text-xl text-left leading-relaxed mb-6 tracking-wide  ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
             laboriosam? Quas, itaque incidunt. Distinctio blanditiis odio
             dolorum quasi labore praesentium ab obcaecati quis vitae iusto
@@ -106,9 +106,9 @@ const About: React.FC = () => {
             Ferdigheter:
           </p>
         </div>
-        <div className="flex justify-center items-center mt-6 select-none">
-          <ul className="space-y-3 cursor-default font-code">
-            <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-5 mb-6 ">
+        <div className="flex justify-center items-center mt-6 select-none ">
+          <ul className="space-y-3 flex flex-col  cursor-default font-code  w-auto md:w-full">
+            <div className="flex flex-col md:flex-row space-y-4  md:space-y-0 md:space-x-4 mb-1 md:mb-1 ">
               {firstHalfIcons.map(
                 ({ component: IconComponent, className, text }, index) => (
                   <motion.li
@@ -117,7 +117,7 @@ const About: React.FC = () => {
                     initial={{ opacity: 0, y: 100 }}
                     whileInView="visible"
                     variants={liVariants}
-                    viewport={{ once: true, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.8 }}
                     className={divLiClassName}
                   >
                     <IconComponent className={className} />
@@ -127,7 +127,7 @@ const About: React.FC = () => {
                 )
               )}
             </div>
-            <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-4 justify-between ">
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-between ">
               {secondHalfIcons.map(
                 ({ component: IconComponent, className, text }, index) => (
                   <motion.li

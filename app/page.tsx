@@ -20,10 +20,8 @@ export default function Page() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="py-20 min-h-screen flex justify-center items-center "
-      >
-        <h1 className="text-4xl font-header">PROSJEKT SEKSJON</h1>
-      </section>
+        className="  flex justify-center items-center "
+      ></section>
 
       {/* Contact Section */}
       <section

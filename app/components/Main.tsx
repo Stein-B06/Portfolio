@@ -11,15 +11,15 @@ const Main = () => {
   }, [theme]);
 
   const handleDragStart = (e: React.DragEvent<HTMLImageElement>) => {
-    e.preventDefault(); // Forhindrer default dragbehavior.
+    e.preventDefault(); // Forhindrer default dragbehavior image.
   };
 
   return (
-    <section id="main" className="h-screen pt-32 xl:mb-8">
-      <div className=" ">
+    <section id="main" className="h-screen pt-32 xl:mb-8 md:pb-60">
+      <div className="">
         <div className="flex flex-col-reverse  xl:flex-row-reverse  items-center justify-around xl:pt-8 transition-all duration-300  ">
           <div className="  text-center xl:text-left xl:mr-24 mt-5 ">
-            <span className="select-none text-lg font-code">
+            <span className="select-none text-lg font-header">
               Junior Frontend
             </span>
             <h2 className="select-none text-5xl xl:text-6xl align-text-top mt-2 xl:m-0 mb-6 text-light-textPrimary dark:text-dark-textPrimary font-header font-bold ">
@@ -37,7 +37,7 @@ const Main = () => {
           <div className="w-full h-full xl:w-1/3 flex justify-center">
             <div className=" w-[300px] h-[300px]   xl:w-[385px] xl:h-[385px] relative ">
               <div
-                className={` rounded-full w-72 h-72 relative  xl:h-96 xl:w-96  ${
+                className={` rounded-full w-60 h-60 md:w-72 md:h-72 relative  xl:h-80 xl:w-80  ${
                   isDarkMode ? "dark-gradient" : "light-gradient"
                 }`}
               >
