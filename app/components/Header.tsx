@@ -38,46 +38,46 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-light-primary dark:bg-gradient-to-r from-dark-accent to-dark-primary  animate-background fixed top-0 left-0 right-0  w-full text-light-textPrimary dark:text-dark-textPrimary font-header font-semibold shadow-md dark:shadow-neon z-50">
+    <header className="bg-light-primary dark:bg-dark-primary  fixed top-0 left-0 right-0  w-full h-16 text-dark-primary dark:text-light-primary font-header font-semibold z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <Link
           href="#main"
-          className="cursor-pointer text-light-textSecondary dark:text-dark-textPrimary"
+          className="cursor-pointer text-dark-primary dark:text-light-primary"
         >
           Lorem
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="#main" className="hover:text-dark-ekstra">
+          <Link href="#main" className="hover:text-dark-accent">
             <span
               className={`  ${
-                activeSection === "main" ? "text-dark-ekstra  " : ""
+                activeSection === "main" ? "text-dark-accent  " : ""
               } `}
             >
               HJEM
             </span>
           </Link>
-          <Link href="#about" className="hover:text-dark-ekstra">
+          <Link href="#about" className="hover:text-dark-accent">
             <span
               className={`  ${
-                activeSection === "about" ? "text-dark-ekstra" : ""
+                activeSection === "about" ? "text-dark-accent" : ""
               } `}
             >
               OM MEG
             </span>
           </Link>
-          <Link href="#projects" className="hover:text-dark-ekstra">
+          <Link href="#projects" className="hover:text-dark-accent">
             <span
               className={`  ${
-                activeSection === "projects" ? "text-dark-ekstra  " : ""
+                activeSection === "projects" ? "text-dark-accent  " : ""
               } `}
             >
               PROSJEKTER
             </span>
           </Link>
-          <Link href="#contact" className="hover:text-dark-ekstra">
+          <Link href="#contact" className="hover:text-dark-accent">
             <span
               className={`  ${
-                activeSection === "contact" ? "text-dark-ekstra " : ""
+                activeSection === "contact" ? "text-dark-accent " : ""
               } `}
             >
               KONTAKT
@@ -102,7 +102,7 @@ export default function Header() {
 
       {/* Dropdown-meny for mobil */}
       <div
-        className={`md:hidden flex flex-col items-center overflow-hidden mb-2 pb-2 transition-all duration-500 ease-in-out transform ${
+        className={`md:hidden flex flex-col items-center overflow-hidden mb-2 pb-2 transition-all duration-500 ease-in-out transform bg-light-primary dark:bg-dark-primary  ${
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -113,7 +113,7 @@ export default function Header() {
         >
           <span
             className={`  ${
-              activeSection === "main" ? "text-dark-ekstra  " : ""
+              activeSection === "main" ? "text-dark-accent  " : ""
             } `}
           >
             HJEM
@@ -121,12 +121,12 @@ export default function Header() {
         </Link>
         <Link
           href="#about"
-          className="hover:text-dark-ekstra mb-4 "
+          className="hover:text-dark-accent mb-4 "
           onClick={handleMenuToggle}
         >
           <span
             className={`  ${
-              activeSection === "about" ? "text-dark-ekstra  " : ""
+              activeSection === "about" ? "text-dark-accent  " : ""
             } `}
           >
             OM MEG
@@ -134,12 +134,12 @@ export default function Header() {
         </Link>
         <Link
           href="#projects"
-          className="hover:text-dark-ekstra mb-4"
+          className="hover:text-dark-accent mb-4"
           onClick={handleMenuToggle}
         >
           <span
             className={`  ${
-              activeSection === "projects" ? "text-dark-ekstra  " : ""
+              activeSection === "projects" ? "text-dark-accent  " : ""
             } `}
           >
             PROSJEKTER
@@ -147,7 +147,7 @@ export default function Header() {
         </Link>
         <Link
           href="#contact"
-          className="hover:text-dark-ekstra mb-8"
+          className="hover:text-dark-accent mb-8"
           onClick={handleMenuToggle}
         >
           <span

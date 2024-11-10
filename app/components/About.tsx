@@ -58,7 +58,7 @@ const icons: IconItem[] = [
 
 // Classname for li elementet.
 const divLiClassName =
-  "flex items-center w-full shadow-neon space-x-3 pr-5 bg-light-accent font-semibold text-base md:text-lg lg:text-xl text-dark-textPrimary dark:bg-dark-secondary dark:text-dark-textSecondary  p-2 rounded-md";
+  "flex items-center w-full  space-x-2 pr-5 bg-dark-primary font-semibold text-base md:text-lg lg:text-xl bg-dark-primary text-light-primary dark:bg-dark-primary border dark:text-light-primary  p-2 rounded-md";
 
 // li animasjon
 const liVariants = {
@@ -66,8 +66,8 @@ const liVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.15, // økende forsinkelse basert på index
-      duration: 0.6,
+      delay: i * 0.05, // økende forsinkelse basert på index
+      duration: 0.3,
     },
   }),
 };
@@ -79,16 +79,16 @@ const secondHalfIcons = icons.slice(midIndex);
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="px-6 py-32 lg:px-32 xl:px-48 ">
+    <section
+      id="about"
+      className="px-6 py-40 h-full flex justify-center items-center "
+    >
       <div className="max-w-4xl mx-auto text-center">
-        <h2
-          data-aos="fade-left"
-          className="text-2xl md:text-3xl lg:text-4xl font-bold font-header mb-8 select-none"
-        >
+        <h2 className="text-dark-primary dark:text-light-primary text-2xl md:text-3xl lg:text-4xl font-bold font-header mb-8 select-none">
           OM MEG
         </h2>
         <div>
-          <p className="text-lg lg:text-xl text-left leading-relaxed mb-6 tracking-wide  ">
+          <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left  mb-6  ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
             laboriosam? Quas, itaque incidunt. Distinctio blanditiis odio
             dolorum quasi labore praesentium ab obcaecati quis vitae iusto
@@ -102,12 +102,12 @@ const About: React.FC = () => {
           </p>
         </div>
         <div>
-          <p className="text-lg md:text-xl lg:text-2xl leading-relaxed select-none mt-16 md:mt-28">
+          <p className="text-lg md:text-xl lg:text-2xl select-none mt-16 md:mt-28">
             Ferdigheter:
           </p>
         </div>
         <div className="flex justify-center items-center mt-6 select-none ">
-          <ul className="space-y-3 flex flex-col  cursor-default font-code  w-auto md:w-full">
+          <ul className="space-y-3 flex flex-col  cursor-default font-body  w-auto md:w-full">
             <div className="flex flex-col md:flex-row space-y-4  md:space-y-0 md:space-x-4 mb-1 md:mb-1 ">
               {firstHalfIcons.map(
                 ({ component: IconComponent, className, text }, index) => (
@@ -127,7 +127,7 @@ const About: React.FC = () => {
                 )
               )}
             </div>
-            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-between ">
+            <div className=" h-full flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4   ">
               {secondHalfIcons.map(
                 ({ component: IconComponent, className, text }, index) => (
                   <motion.li

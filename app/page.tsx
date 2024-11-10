@@ -3,32 +3,26 @@ import React from "react";
 import About from "./components/About";
 import Main from "./components/Main";
 import MouseArrowGlow from "./components/mouseArrowGlow";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function Page() {
   return (
-    <div className="font-body bg-light-primary dark:bg-dark-primary  text-light-textPrimary dark:text-dark-textPrimary  transition-colors duration-500 ease-in-out ">
-      {/* Main Section */}
+    <div className=" bg-light-primary dark:bg-dark-primary  text-light-textPrimary dark:text-dark-textPrimary  transition-colors duration-500 ease-in-out ">
       <section id="main" className=" mx-4 ">
         <Main />
       </section>
 
-      {/* About Section */}
-      <section id="about" className=" mx-4 ">
+      <section id="about" className=" mx-10 ">
         <About />
       </section>
 
-      {/* Projects Section */}
-      <section
-        id="projects"
-        className="  flex justify-center items-center "
-      ></section>
+      <section id="projects" className=" flex  justify-center mx-6 ">
+        <Projects />
+      </section>
 
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="h-screen flex items-center justify-center"
-      >
-        <h1 className="text-4xl font-header">KONTAKT SEKSJON</h1>
+      <section id="contact" className="h-full flex  justify-center">
+        <Contact />
       </section>
       <MouseArrowGlow />
     </div>
