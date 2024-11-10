@@ -14,26 +14,20 @@ const config: Config = {
       colors: {
         // Bakgrunns og tekstfarger for light-mode
         light: {
-          primary: "#E9EDC9",
-          secondary: "#CCD5AE",
-          accent: "#365314",
-          textPrimary: "#010C04",
-          textSecondary: "#022E0D",
+          primary: "#F1F7ED",
+          secondary: "#243E36",
+          accent: "#7CA982",
         },
         // Bakgrunns og tekstfarger for dark-mode
         dark: {
-          primary: "#08020C",
-          secondary: "#3A015C",
-          accent: "#365314",
-          ekstra: "#099D69",
-          textPrimary: "#F7F7F7",
-          textSecondary: "#DEEEE0",
+          primary: "#243E36",
+          secondary: "#F1F7ED",
+          accent: "#7CA982",
         },
       },
       fontFamily: {
-        body: ["Poppins", "sans-serif"], // For brødtekst
-        header: ["oswald", "sans-serif"], // For overskrifter
-        code: ["Fira Code", "monospace"], // Kode eller aksenter
+        body: ["Roboto", "sans-serif"], // For brødtekst
+        header: ["Oswald", "sans-serif"], // For overskrifter
       },
       boxShadow: {
         neon: "0 0 10px #099D69, 0 0 10px #099D69, 0 0 3px #099D69",

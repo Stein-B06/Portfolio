@@ -15,42 +15,40 @@ const Main = () => {
   };
 
   return (
-    <section id="main" className="h-screen pt-32 xl:mb-8 md:pb-60">
-      <div className="">
-        <div className="flex flex-col-reverse  xl:flex-row-reverse  items-center justify-around xl:pt-8 transition-all duration-300  ">
-          <div className="  text-center xl:text-left xl:mr-24 mt-5 ">
-            <span className="select-none text-lg font-header">
-              Junior Frontend
-            </span>
-            <h2 className="select-none text-5xl xl:text-6xl align-text-top mt-2 xl:m-0 mb-6 text-light-textPrimary dark:text-dark-textPrimary font-header font-bold ">
-              Hei! Mitt navn er
-              <br />
-              <span className=" text-light-accent dark:text-dark-ekstra  ">
-                Stein
-              </span>
-            </h2>
-            <p className=" max-w-[500px] text-lg lg:text-xl text-light-textSecondary dark:text-white mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              doloremque sequi magnam ex praesentium eum!
-            </p>
-          </div>
-          <div className="w-full h-full xl:w-1/3 flex justify-center">
-            <div className=" w-[300px] h-[300px]   xl:w-[385px] xl:h-[385px] relative ">
-              <div
-                className={` rounded-full w-60 h-60 md:w-72 md:h-72 relative  xl:h-80 xl:w-80  ${
-                  isDarkMode ? "dark-gradient" : "light-gradient"
-                }`}
-              >
-                <Image
-                  src="/Images/Randomport.jpg"
-                  alt="Profilbilde"
-                  fill
-                  onDragStart={handleDragStart}
-                  className="object-contain rounded-full"
-                />
-              </div>
-            </div>
-          </div>
+    <section
+      id="main"
+      className=" h-full py-64  flex flex-col items-center justify-center md:flex-row gap-28 "
+    >
+      <div className="flex justify-center  ">
+        <div
+          className={`  rounded-full w-60 h-60 md:w-72 md:h-72 relative  xl:h-80 xl:w-80  ${
+            isDarkMode ? "" : ""
+          }`}
+        >
+          <Image
+            src="/Images/Randomport.jpg"
+            alt="Profilbilde"
+            fill
+            onDragStart={handleDragStart}
+            className="object-contain rounded-full"
+          />
+        </div>
+      </div>
+      <div className=" flex flex-col  xl:flex-row  items-center justify-center xl:pt-8  ">
+        <div className="  text-center xl:text-left  mt-5 ">
+          <span className="select-none text-base text-light-textSecondary dark:text-dark-textPrimary font-body">
+            Junior Frontend
+          </span>
+          <h2 className="select-none text-5xl xl:text-5xl align-text-top mt-2 xl:m-0 mb-6 text-dark-primary dark:text-light-primary font-header font-bold ">
+            Hei! Mitt navn er
+            <br />
+            <span className=" text-dark-accent font-header  ">Stein</span>
+          </h2>
+          <p className="font-body max-w-[500px] text-base lg:text-lg font-semibold  text-dark-primary dark:text-light-primary mb-10">
+            En entusiastisk Frontend-utvikler med et ønske om å lage fantastiske
+            nett-opplevelser ved hjelp av mine kunnskaper innen Frontend
+            utvikling.
+          </p>
         </div>
       </div>
     </section>

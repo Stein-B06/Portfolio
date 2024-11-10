@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,10 +12,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-p {
-  letter-spacing: 0.025em;
 }
 
 .hamburger {
@@ -53,26 +51,6 @@ p {
 .hamburger.open .hamburger-line:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -8.5px);
 }
-
-/*.underline-transition::after {
-  content: "";
-  background-color: #010c04;
-  position: absolute;
-  left: 0;
-  bottom: 4px;
-  width: 0;
-  height: 1.5px;
-  transition: width 0.2s ease-in-out;
-}
-.underline-transition:hover::after {
-  width: 100%;
-}
-
-.dark .underline-transition::after {
-  background-color: #f7f7f7; /* Color for dark mode 
-}
-
-*/
 
 @keyframes gradient-move {
   0% {
@@ -175,4 +153,11 @@ p {
   animation: dark-gradient 8s linear infinite;
   border-width: 2px;
   border-style: hidden;
+}
+
+/* For glødetekst*/
+.glow-text {
+  transition: text-shadow 0.2s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3),
+    0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.7);
 }
