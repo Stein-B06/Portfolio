@@ -34,7 +34,7 @@ const projectData = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="px-6 py-32 my-32  h-full ">
+    <section id="projects" className="px-6 py-20 md:py-40 h-full ">
       <div className="container mx-auto px-4">
         <h2 className="font-body text-2xl md:text-3xl lg:text-4xl font-bold text-light-secondary dark:text-dark-secondary mb-8 text-center">
           NOEN AV MINE PROSJEKTER

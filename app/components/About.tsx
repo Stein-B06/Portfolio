@@ -81,7 +81,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="px-6 py-40 h-full flex justify-center items-center "
+      className="px-6 py-20 md:py-40 h-full flex justify-center items-center "
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-dark-primary dark:text-light-primary text-2xl md:text-3xl lg:text-4xl font-bold font-header mb-8 select-none">

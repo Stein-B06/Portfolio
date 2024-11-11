@@ -74,7 +74,7 @@ export default function Header() {
               PROSJEKTER
             </span>
           </Link>
-          <Link href="#contact" className="hover:text-dark-accent">
+          {/* <Link href="#contact" className="hover:text-dark-accent">
             <span
               className={`  ${
                 activeSection === "contact" ? "text-dark-accent " : ""
@@ -82,7 +82,7 @@ export default function Header() {
             >
               KONTAKT
             </span>
-          </Link>
+          </Link> */}
           <div>
             <ThemeSwitcher />
           </div>
@@ -145,7 +145,7 @@ export default function Header() {
             PROSJEKTER
           </span>
         </Link>
-        <Link
+        {/* <Link
           href="#contact"
           className="hover:text-dark-accent mb-8"
           onClick={handleMenuToggle}
@@ -157,7 +157,7 @@ export default function Header() {
           >
             KONTAKT
           </span>
-        </Link>
+        </Link> */}
         <ThemeSwitcher />
       </div>
     </header>

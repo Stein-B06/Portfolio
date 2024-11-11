@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import MouseArrowGlow from "./components/mouseArrowGlow";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import HoverReveal from "./components/RevealOnHover";
 
 export default function Page() {
   return (
@@ -17,10 +18,12 @@ export default function Page() {
         <About />
       </section>
 
-      <section id="projects" className=" flex  justify-center mx-6 ">
+      <section id="projects" className=" flex  justify-center mx-10  ">
         <Projects />
       </section>
-
+      <div className="font-reveal hidden md:flex md:justify-center cursor-default">
+        <HoverReveal snippet="In Omnia Paratus" />
+      </div>
       <section id="contact" className="h-full flex  justify-center">
         <Contact />
       </section>
