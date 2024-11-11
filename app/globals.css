@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -160,4 +161,18 @@ html {
   transition: text-shadow 0.2s ease;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.3),
     0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Parallax Background Image */
+.parallax-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/Images/background.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1; /* Ensures the background is behind the content */
 }

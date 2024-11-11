@@ -28,10 +28,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       <div className="flex flex-col xl:flex-row items-center xl:items-start  ">
         <div className="p-3 flex flex-col  w-full">
-          <h2 className="text-2xl font-semibold text-dark-primary dark:text-light-primary">
+          <h2 className="text-2xl font-semibold text-dark-primary font-header dark:text-light-primary">
             {title}
           </h2>
-          <p className="mt-2 h-28  text-sm text-gray-700 dark:text-light-primary">
+          <p className="mt-2 h-28 font-body  text-sm text-gray-700 dark:text-light-primary">
             {description}
           </p>
 

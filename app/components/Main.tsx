@@ -17,7 +17,7 @@ const Main = () => {
   return (
     <section
       id="main"
-      className=" h-full py-64  flex flex-col items-center justify-center md:flex-row gap-28 "
+      className=" h-full py-20 md:py-32  flex flex-col items-center justify-center md:flex-row gap-28 "
     >
       <div className="flex justify-center  ">
         <div

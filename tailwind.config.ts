@@ -28,6 +28,7 @@ const config: Config = {
       fontFamily: {
         body: ["Roboto", "sans-serif"], // For brødtekst
         header: ["Oswald", "sans-serif"], // For overskrifter
+        reveal: ["Dancing Script", "sans-serif"],
       },
       boxShadow: {
         neon: "0 0 10px #099D69, 0 0 10px #099D69, 0 0 3px #099D69",
