@@ -21,14 +21,14 @@ const Contact = () => {
           href=""
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 flex items-center justify-center border-2 border-light-accent rounded-full bg-light-secondary text-light-primary  transition-all duration-300 hover:bg-light-accent/40 hover:scale-110"
+          className="w-10 h-10 flex items-center justify-center border-2 border-light-accent rounded-full bg-light-secondary text-light-primary  transition-all duration-300 hover:bg-dark-primary/80 dark:hover:bg-dark-accent/10 hover:scale-110"
         >
           <FaGithub className="text-2xl" />
         </a>
 
         <a
           href="mailto:"
-          className="w-10 h-10 flex items-center justify-center border-2 border-light-accent rounded-full bg-light-secondary text-light-primary  transition-all duration-300 hover:bg-light-accent/40 hover:scale-110"
+          className="w-10 h-10 flex items-center justify-center border-2 border-light-accent rounded-full bg-light-secondary text-light-primary  transition-all duration-300 hover:bg-dark-primary/80 dark:hover:bg-dark-accent/10  hover:scale-110"
         >
           <FaEnvelope className="text-xl" />
         </a>

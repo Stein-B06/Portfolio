@@ -22,13 +22,13 @@ const projectData = [
     technologies: ["React", "HTMl", "CSS", "Javascript"],
   },
   {
-    title: "Project three",
+    title: "Luna Link",
     description:
-      "A description of Project One that explains its features and purpose.",
-    imageUrl: "/Images/bgImage.png",
+      "Et lærerikt gruppeprosjekt jeg var prosjektleder for. Prosjektet var gøyt å jobbe med og ga god trening i forhold til samarbeid, koding og å være prosjektleder.",
+    imageUrl: "/Images/LLapp.png",
     liveLink: "",
     codeLink: "",
-    technologies: ["React", "Typescript", "Tailwind CSS"],
+    technologies: ["HTML", "CSS", "Javascript", "React"],
   },
 ];
 
