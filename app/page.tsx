@@ -9,7 +9,7 @@ import HoverReveal from "./components/RevealOnHover";
 
 export default function Page() {
   return (
-    <div className=" bg-light-primary dark:bg-dark-primary  text-light-textPrimary dark:text-dark-textPrimary  transition-colors duration-500 ease-in-out ">
+    <div className=" bg-light-primary dark:bg-dark-primary transition-colors duration-500 ease-in-out ">
       <section id="main" className=" mx-4 ">
         <Main />
       </section>

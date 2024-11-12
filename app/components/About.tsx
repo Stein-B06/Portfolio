@@ -88,7 +88,7 @@ const About: React.FC = () => {
           OM MEG
         </h2>
         <div>
-          <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left  mb-6  ">
+          <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left  mb-6 md:px-20 ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
             laboriosam? Quas, itaque incidunt. Distinctio blanditiis odio
             dolorum quasi labore praesentium ab obcaecati quis vitae iusto
