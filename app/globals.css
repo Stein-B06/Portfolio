@@ -27,7 +27,7 @@ html {
 }
 
 .hamburger.open {
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }
 
 .hamburger-line {
@@ -163,16 +163,22 @@ html {
     0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
-/* Parallax Background Image */
+/* Bakgrunnsbilde */
 .parallax-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("/Images/background.png"); /* Replace with your image path */
+  background-image: url("/Images/backgrIMG.png");
   background-size: cover;
+  opacity: 30%;
   background-position: center;
   background-attachment: fixed;
-  z-index: -1; /* Ensures the background is behind the content */
+  z-index: -1; /* Sørger for at bilde er bak innholdet */
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
 }

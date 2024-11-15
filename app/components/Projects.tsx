@@ -19,12 +19,21 @@ const projectData = [
     imageUrl: "/Images/GCapp.png",
     liveLink: "",
     codeLink: "",
-    technologies: ["React", "HTMl", "CSS", "Javascript"],
+    technologies: ["HTML", "CSS", "Javascript"],
+  },
+  {
+    title: "Golfshot Counter",
+    description:
+      "Siden jeg spiller golf, lagde jeg dette prosjektet. Kan brukes på golfbanen for å holde kontroll på antall golfslag i løpet av golfrunden.",
+    imageUrl: "/Images/GCapp.png",
+    liveLink: "",
+    codeLink: "",
+    technologies: ["React", "HTML", "CSS", "Javascript"],
   },
   {
     title: "Luna Link",
     description:
-      "Et lærerikt gruppeprosjekt jeg var prosjektleder for. Prosjektet var gøyt å jobbe med og ga god trening i forhold til samarbeid, koding og å være prosjektleder.",
+      "Et lærerikt gruppeprosjekt jeg var prosjektleder for. Prosjektet var gøyt å jobbe med og ga god trening i forhold til samarbeid, koding og det å være prosjektleder.",
     imageUrl: "/Images/LLapp.png",
     liveLink: "",
     codeLink: "",
@@ -34,14 +43,14 @@ const projectData = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="px-6 py-20 md:py-40 h-full ">
+    <section id="projects" className="px-2  py-20 md:py-40 pt-20  h-full  ">
       <div className="container mx-auto px-4">
         <h2 className="font-body text-2xl md:text-3xl lg:text-4xl font-bold text-light-secondary dark:text-dark-secondary mb-8 text-center">
           NOEN AV MINE PROSJEKTER
         </h2>
 
         {/* Prosjekt kort */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap gap-8 justify-center">
           {projectData.map((project, index) => (
             <ProjectCard
               key={index}

@@ -52,7 +52,7 @@ const icons: IconItem[] = [
   {
     component: SiNextdotjs,
     className: "text-black bg-white rounded-sm text-3xl",
-    text: "NEXT.JS",
+    text: "Next.JS",
   },
 ];
 
@@ -102,7 +102,7 @@ const About: React.FC = () => {
           </p>
         </div>
         <div>
-          <p className="text-lg md:text-xl lg:text-2xl select-none mt-16 md:mt-28">
+          <p className="text-dark-primary dark:text-light-primary text-lg md:text-xl lg:text-2xl select-none mt-16 md:mt-28">
             Ferdigheter:
           </p>
         </div>

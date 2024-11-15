@@ -63,7 +63,7 @@ const HoverReveal: React.FC<HoverRevealProps> = ({ snippet }) => {
         filter: `brightness(${opacity * 1.5 + 0.5})`, // Legger til lysstyrke for en glød-effekt
         transition: "opacity 0.2s ease, filter 0.2s ease", // Jevn overgang for gjennomsiktighet og lysstyrke
       }}
-      className=" text-light-primary text-sm flex items-center justify-center"
+      className="hidden dark:flex items-center justify-center text-light-primary text-sm "
     >
       {/* Legger betinget til glow-text klasse hvis gjennomsiktigheten er høy */}
       <code
