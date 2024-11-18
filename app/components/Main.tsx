@@ -36,7 +36,7 @@ const Main = () => {
       </div>
       <div className=" flex flex-col  xl:flex-row  items-center justify-center xl:pt-8  ">
         <div className="  text-center xl:text-left  mt-5 ">
-          <span className="select-none text-base text-light-textSecondary dark:text-dark-textPrimary font-body">
+          <span className="select-none text-base text-dark-primary dark:text-light-primary font-body">
             Junior Frontend
           </span>
           <h2 className="select-none text-5xl xl:text-5xl align-text-top mt-2 xl:m-0 mb-6 text-dark-primary dark:text-light-primary font-header font-bold ">

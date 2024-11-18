@@ -9,7 +9,8 @@ import HoverReveal from "./components/RevealOnHover";
 
 export default function Page() {
   return (
-    <div className=" bg-light-primary dark:bg-dark-primary transition-colors duration-500 ease-in-out ">
+    <div className="page-content bg-light-primary dark:bg-dark-primary transition-colors duration-500 ease-in-out ">
+      <div className="parallax-background"></div>
       <section id="main" className=" mx-4 ">
         <Main />
       </section>
@@ -18,15 +19,16 @@ export default function Page() {
         <About />
       </section>
 
-      <section id="projects" className=" flex  justify-center mx-10  ">
+      <section id="projects" className=" flex flex-col  justify-center mx-10  ">
         <Projects />
+        <div>
+          <div className="font-reveal hidden md:flex md:justify-center cursor-default p-10">
+            <HoverReveal snippet="In Omnia Paratus" />
+          </div>
+          <Contact />
+        </div>
       </section>
-      <div className="font-reveal hidden md:flex md:justify-center cursor-default">
-        <HoverReveal snippet="In Omnia Paratus" />
-      </div>
-      <section id="contact" className="h-full flex  justify-center">
-        <Contact />
-      </section>
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t dark:from-dark-primary dark:to-transparent hidden md:block"></div>
       <MouseArrowGlow />
     </div>
   );
