@@ -100,7 +100,7 @@ export default function Header() {
 
       {/* Dropdown-meny for mobil */}
       <div
-        className={`md:hidden flex flex-col items-center overflow-hidden mb-2 pb-2 transition-all duration-500 ease-in-out transform bg-light-accent dark:bg-dark-primary  ${
+        className={`md:hidden flex flex-col items-center overflow-hidden mb-2 pb-4 transition-all duration-500 ease-in-out transform bg-light-accent dark:bg-dark-primary  ${
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

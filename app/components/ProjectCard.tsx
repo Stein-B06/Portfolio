@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {technologies.map((tech, index) => (
               <span
                 key={index}
-                className="text-xs font-semibold text-light-primary  bg-dark-accent  dark:bg-dark-primary  px-2 py-1 rounded-md"
+                className="text-xs font-semibold text-light-primary  bg-dark-primary  dark:bg-light-accent dark:text-dark-primary  px-2 py-1 rounded-md"
               >
                 {tech}
               </span>
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold p-2 rounded-lg text-dark-primary dark:text-light-primary hover:bg-dark-primary/50 hover:text-light-primary hover:dark:bg-dark-accent "
+              className="font-bold p-2 rounded-lg text-dark-primary dark:text-light-primary hover:bg-dark-primary/50 hover:text-light-primary hover:dark:bg-dark-accent/50 "
             >
               Live Demo
             </a>
@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               href={codeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className=" font-bold p-2 rounded-lg text-dark-primary dark:text-light-primary hover:bg-dark-primary/50 hover:text-light-primary hover:dark:bg-dark-accent   "
+              className=" font-bold p-2 rounded-lg text-dark-primary dark:text-light-primary hover:bg-dark-primary/50 hover:text-light-primary hover:dark:bg-dark-accent/50   "
             >
               Github
             </a>

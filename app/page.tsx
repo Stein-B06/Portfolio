@@ -28,7 +28,7 @@ export default function Page() {
           <Contact />
         </div>
       </section>
-
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t dark:from-dark-primary dark:to-transparent hidden md:block"></div>
       <MouseArrowGlow />
     </div>
   );

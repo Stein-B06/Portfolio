@@ -58,7 +58,7 @@ const icons: IconItem[] = [
 
 // Classname for li elementet.
 const divLiClassName =
-  "flex items-center w-full  space-x-2 pr-5 bg-dark-primary font-semibold text-base md:text-lg lg:text-xl bg-dark-primary text-light-primary dark:bg-dark-primary border dark:text-light-primary  p-2 rounded-md";
+  "flex items-center w-full  space-x-2 pr-5 bg-dark-primary font-semibold text-base md:text-lg lg:text-lg bg-dark-primary text-light-primary dark:bg-dark-primary border dark:text-light-primary  p-2 rounded-md";
 
 // li animasjon
 const liVariants = {
@@ -81,14 +81,14 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="px-6 py-20 md:py-40 h-full flex justify-center items-center "
+      className="px-6 py-20 md:py-36 h-full flex justify-center items-center "
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-dark-primary dark:text-light-primary text-2xl md:text-3xl lg:text-4xl font-bold font-header mb-8 select-none">
           OM MEG
         </h2>
-        <div>
-          <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left  mb-6 md:px-20 ">
+        <div className="mb-6 md:px-20">
+          <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left   ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
             laboriosam? Quas, itaque incidunt. Distinctio blanditiis odio
             dolorum quasi labore praesentium ab obcaecati quis vitae iusto
