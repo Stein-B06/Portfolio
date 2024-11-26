@@ -16,7 +16,7 @@ const projectData = [
   {
     title: "Pawtopia Planet",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellendus eaque quos consectetur, harum sint inventore distinctio cum ipsam laboriosam dolore necessitatibus placeat voluptatem provident molestias suscipit quia omnis. Porro.",
+      "Mitt første prosjekt i Next.JS. På nettsiden kan man søke etter hunderaser, se bilder og hundefakta. Jeg lagde det i Next.js med TypeScript og Tailwind CSS som henter og viser dynamiske data fra en ekstern API ved hjelp av Fetch API, med responsivt design.",
     imageUrl: "/Images/PPimg.png",
     liveLink: "https://pawtopia-planet.vercel.app/",
     codeLink: "https://github.com/Stein-B06/doglens",
