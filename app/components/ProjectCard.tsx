@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <h2 className="text-2xl font-semibold text-dark-primary font-header dark:text-light-primary">
             {title}
           </h2>
-          <p className="font-body font-semibold py-2   min-h-24 max-w-md  text-sm text-gray-700 dark:text-light-primary">
+          <p className="font-body font-semibold py-2   min-h-24 max-w-md  text-sm md:text-base text-gray-700 dark:text-light-primary">
             {description}
           </p>
 
@@ -68,7 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             draggable="false"
             src={imageUrl}
             alt={title}
-            layout="fill"
+            fill
             className="rounded-xl -z-10 "
           />
         </div>

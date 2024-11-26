@@ -39,13 +39,7 @@ export default function Header() {
 
   return (
     <header className="bg-light-accent dark:bg-dark-primary  fixed top-0 left-0 right-0  w-full h-16 text-dark-primary dark:text-light-primary font-header font-semibold z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <Link
-          href="#main"
-          className="cursor-pointer text-dark-primary dark:text-light-primary"
-        >
-          Lorem
-        </Link>
+      <div className="max-w-7xl mx-auto flex justify-end items-center p-4">
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="#main" className="hover:text-dark-accent">
             <span

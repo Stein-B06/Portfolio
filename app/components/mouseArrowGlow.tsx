@@ -39,7 +39,7 @@ const MouseArrowGlow: React.FC = () => {
 
   return (
     <div
-      className="hidden lg:block pointer-events-none fixed top-0 left-0 w-64 h-64 rounded-full bg-dark-accent/40 opacity-10 mix-blend-normal
+      className="hidden lg:block pointer-events-none fixed top-0 left-0 w-64 h-64 rounded-full bg-dark-accent/90 opacity-10 mix-blend-normal
                        transition-transform duration-75  blur-3xl"
       style={{
         transform: `translate(${mousePosition.x - 125}px, ${
