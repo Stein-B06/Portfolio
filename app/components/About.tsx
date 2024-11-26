@@ -89,20 +89,34 @@ const About: React.FC = () => {
         </h2>
         <div className="mb-6 md:px-20">
           <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left   ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            laboriosam? Quas, itaque incidunt. Distinctio blanditiis odio
-            dolorum quasi labore praesentium ab obcaecati quis vitae iusto
-            voluptate exercitationem, eveniet rem accusamus amet tempore ipsum
-            inventore minus quam beatae nam consectetur. Ipsum ab iste quasi
-            voluptatem similique magni inventore ducimus et voluptates?
+            Jeg er for tiden i praksis hos VIS Innovasjon som design og
+            frontend-ansvarlig for et internt prosjekt. Her utvikler vi et
+            system for håndtering av informasjon rundt tidligere startups og
+            bedrifter tilknyttet Vis Innovasjon. <br /> <br />
+            Jeg har fått gode tilbakemeldinger på løsningene jeg har valgt.
+            Techstacken jeg har jobbet med er; React med MUI, Tailwind CSS,
+            TypeScript samt chart.js for datavisualisering. Gjennom dette
+            prosjektet har jeg fått verdifull erfaring og anledning til å
+            anvende mine ferdigheter innen frontend-utvikling. Prosjektet har
+            også gitt meg gode tilbakemeldinger og muligheten til å
+            videreutvikle min kompetanse i et profesjonelt miljø. <br></br>{" "}
+            <br></br> Før jeg begynte i praksis hos VIS, studerte jeg
+            frontend-utvikling hos Kodehode i regi av Jobloop. Gjennom studiet
+            har jeg tilegnet meg god kunnskap i HTML/CSS, JavaScript,
+            Git/GitHub, Figma, TypeScript og React. I tillegg har jeg på egen
+            hånd lært meg å bruke Next.js, Tailwind og MUI.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            doloremque sunt saepe harum accusamus rerum.
+            Jeg er glad i å skape gode nettopplevelser med responsivt design og
+            optimal brukeropplevelse. Jeg er også ivrig etter å oppdatere meg på
+            nye teknologier og metoder som er relevante for en frontendutvikler.{" "}
+            <br />
+            Utenom koding finner jeg glede i familien, gaming, brygging av øl og
+            cider, fisking og tee-off på golfbanen.
           </p>
         </div>
         <div>
-          <p className="text-dark-primary dark:text-light-primary text-lg md:text-xl lg:text-2xl select-none mt-16 md:mt-28">
+          <p className="text-dark-primary dark:text-light-primary font-header text-lg md:text-xl lg:text-2xl select-none mt-16 md:mt-28">
             Ferdigheter:
           </p>
         </div>

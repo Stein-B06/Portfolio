@@ -11,14 +11,14 @@ const Contact = () => {
       {/* Ikoner plassert rett på md+-skjermer, horisontalt justert nederst på mindre skjermer */}
       <div
         className=" 
-          md:fixed md:right-3 md:top-1/2 md:transform md:-translate-y-1/2 
+          md:fixed md:right-4 xl:right-12 md:top-1/2 md:transform md:-translate-y-1/2 
           flex md:flex-col md:space-y-4 space-x-4 justify-center
           md:space-x-0 py-2 px-1 rounded-lg w-full md:w-auto
            z-50
         "
       >
         <a
-          href=""
+          href="https://github.com/Stein-B06"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 flex items-center justify-center border-2 border-light-accent rounded-full bg-light-secondary text-light-primary  transition-all duration-300 hover:bg-dark-primary/80 dark:hover:bg-dark-accent/10 hover:scale-110"
@@ -27,7 +27,7 @@ const Contact = () => {
         </a>
 
         <a
-          href="mailto:"
+          href="mailto:steinb06.kodehode@gmail.com"
           className="w-10 h-10 flex items-center justify-center border-2 border-light-accent rounded-full bg-light-secondary text-light-primary  transition-all duration-300 hover:bg-dark-primary/80 dark:hover:bg-dark-accent/10  hover:scale-110"
         >
           <FaEnvelope className="text-xl" />

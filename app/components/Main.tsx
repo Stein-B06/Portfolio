@@ -17,11 +17,11 @@ const Main = () => {
   return (
     <section
       id="main"
-      className=" h-full py-20 md:py-32  flex flex-col items-center justify-center md:flex-row gap-28 "
+      className=" h-full py-20 md:py-32 xl:py-52 flex flex-col items-center justify-center lg:flex-row gap-28 "
     >
       <div className="flex justify-center  ">
         <div
-          className={`  rounded-full w-60 h-60 md:w-72 md:h-72 relative  xl:h-80 xl:w-80  ${
+          className={`  rounded-full w-60 h-60 md:w-72 md:h-72 relative  xl:h-96 xl:w-96  ${
             isDarkMode ? "" : ""
           }`}
         >
@@ -35,7 +35,7 @@ const Main = () => {
         </div>
       </div>
       <div className=" flex flex-col  xl:flex-row  items-center justify-center xl:pt-8  ">
-        <div className="  text-center xl:text-left  mt-5 ">
+        <div className="  text-center xl:text-left  mt-1 ">
           <span className="select-none text-base text-dark-primary dark:text-light-primary font-body">
             Junior Frontend
           </span>
@@ -45,9 +45,8 @@ const Main = () => {
             <span className=" text-dark-accent font-header  ">Stein</span>
           </h2>
           <p className="font-body max-w-[500px] text-base lg:text-lg font-semibold  text-dark-primary dark:text-light-primary mb-10">
-            En entusiastisk Frontend-utvikler med et ønske om å lage fantastiske
-            nett-opplevelser ved hjelp av mine kunnskaper innen Frontend
-            utvikling.
+            Jeg er en aspirerende frontendutvikler, som liker å lage flotte
+            nettopplevelser ved hjelp av mine kunnskaper innen faget.
           </p>
         </div>
       </div>
