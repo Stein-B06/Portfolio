@@ -19,15 +19,18 @@ export default function Page() {
         <About />
       </section>
 
-      <section id="projects" className=" flex flex-col  justify-center mx-10  ">
+      <section
+        id="projects"
+        className=" flex flex-col  justify-center mx-10 mb-10 "
+      >
         <Projects />
         <div>
           <div className="font-reveal hidden md:flex md:justify-center cursor-default p-10">
             <HoverReveal snippet="In Omnia Paratus" />
           </div>
-          <Contact />
         </div>
       </section>
+      <Contact />
 
       <section id="Footer" className="pb-16 h-10">
         <div className="text-center text-sm z-50 text-dark-primary dark:text-dark-secondary ">

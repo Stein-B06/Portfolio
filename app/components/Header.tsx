@@ -48,7 +48,7 @@ export default function Header() {
             <span
               className={`  ${
                 activeSection === "main"
-                  ? "text-light-primary dark:text-dark-accent"
+                  ? "text-light-primary dark:text-dark-accent   "
                   : ""
               } `}
             >
@@ -57,7 +57,7 @@ export default function Header() {
           </Link>
           <Link
             href="#about"
-            className="hover:text-light-primary dark:hover:hover:text-dark-accent"
+            className="hover:text-light-primary dark:hover:text-dark-accent"
           >
             <span
               className={`  ${
@@ -71,7 +71,7 @@ export default function Header() {
           </Link>
           <Link
             href="#projects"
-            className="hover:text-light-primary dark:hover:hover:text-dark-accent"
+            className="hover:text-light-primary dark:hover:text-dark-accent"
           >
             <span
               className={`  ${
