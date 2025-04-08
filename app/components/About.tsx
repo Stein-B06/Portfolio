@@ -89,30 +89,22 @@ const About: React.FC = () => {
         </h2>
         <div className="mb-6 md:px-20">
           <p className="text-dark-primary dark:text-light-primary  font-body text-base lg:text-lg text-left   ">
-            Jeg er for tiden i praksis hos VIS Innovasjon som design og
-            frontend-ansvarlig for et internt prosjekt. Her utvikler vi et
-            system for håndtering av informasjon rundt tidligere startups og
-            bedrifter tilknyttet Vis Innovasjon. <br /> <br />
-            Jeg har fått gode tilbakemeldinger på løsningene jeg har valgt.
-            Techstacken jeg har jobbet med er; React med MUI, Tailwind CSS,
-            TypeScript samt chart.js for datavisualisering. Gjennom dette
-            prosjektet har jeg fått verdifull erfaring og anledning til å
-            anvende mine ferdigheter innen frontend-utvikling. Prosjektet har
-            også gitt meg gode tilbakemeldinger og muligheten til å
-            videreutvikle min kompetanse i et profesjonelt miljø. <br></br>{" "}
-            <br></br> Før jeg begynte i praksis hos VIS, studerte jeg
-            frontend-utvikling hos Kodehode i regi av Jobloop. Gjennom studiet
-            har jeg tilegnet meg god kunnskap i HTML/CSS, JavaScript,
-            Git/GitHub, Figma, TypeScript og React. I tillegg har jeg på egen
-            hånd lært meg å bruke Next.js, Tailwind og MUI.
+            Jeg er for tiden intern i Kodeverket som frontend-utvikler.
+            Tidligere hadde jeg ansvar for design og frontend i et internt
+            prosjekt hos Vis Innovasjon, hvor vi utviklet et system for
+            håndtering av informasjon rundt tidligere startups og bedrifter
+            tilknyttet Vis Innovasjon. Jeg har fått gode tilbakemeldinger på
+            løsningene jeg har valgt. <br /> <br />
+            Jeg jobber hovedsakelig med NextJS, TypeScript og Tailwind CSS, og
+            har utdanning fra Kodehode i regi av Jobloop. I tillegg har jeg
+            bygget videre på kompetansen min med verktøy som React, MUI og
+            UI-biblioteker som Chart.JS, Swiper og Framer Motion.
+            <br></br> Jeg er opptatt av å utvikle løsninger med god struktur,
+            ytelse og brukeropplevelse.
             <br />
             <br />
-            Jeg er glad i å skape gode nettopplevelser med responsivt design og
-            optimal brukeropplevelse. Jeg er også ivrig etter å oppdatere meg på
-            nye teknologier og metoder som er relevante for en frontendutvikler.{" "}
-            <br />
-            Utenom koding finner jeg glede i familien, gaming, brygging av øl og
-            cider, fisking og tee-off på golfbanen.
+            På fritiden liker jeg å koble av med gaming, brygging av øl og
+            cider, fisking og en tur på golfbanen når været tillater det.
           </p>
         </div>
         <div>
